@@ -63,7 +63,7 @@ class OrgDate:
         Parses an org-mode date time string.
         Returns (timed, weekdayed, time_struct, repeat).
         """
-        search_re = r'r(?P<date>{date})(\s+(?P<time>{time}))?'.format(
+        search_re = r'(?P<date>{date})(\s+(?P<time>{time}))?'.format(
             **self.DICT_RE)
         s = re.search(search_re, s)
 
