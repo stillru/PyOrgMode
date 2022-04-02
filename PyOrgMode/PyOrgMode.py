@@ -45,7 +45,7 @@ class OrgDate:
     CLOCKED = 128
 
     # TODO: Timestamp with repeater interval
-    DICT_RE = {'start': '[[<]',
+    DICT_RE = {'start': '[\[<]',
                'end':   '[]>]',
                'date':  r'([0-9]{4})-([0-9]{2})-([0-9]{2})(\s+([\w.]+))?',
                'time':  '([0-9]{2}):([0-9]{2})',
